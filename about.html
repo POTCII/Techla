@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechLa</title>
+  <link rel="shortcut icon" href="image/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/about.css">
+  <style>
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 30px;
+      height: 21px;
+      cursor: pointer;
+      z-index: 10;
+      position: relative;
+    }
+    .hamburger span {
+      width: 100%;
+      height: 3px;
+      background-color: #1b0f05;
+      border-radius: 3px;
+      transition: all 0.3s ease;
+    }
+    @media (max-width: 768px) {
+      .hamburger {
+        display: flex;
+      }
+      nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        max-width: 300px;
+        height: 100vh;
+        background-color: rgba(255, 255, 200, 0.95);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: 0.3s ease-in-out;
+        z-index: 5;
+        display: flex;
+      }
+      nav.active {
+        right: 0;
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      nav a {
+        margin: 10px 0;
+        font-size: 1.2rem;
+        text-align: center;
+        display: block;
+      }
+      .hamburger.active span:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+      }
+      .hamburger.active span:nth-child(2) {
+        opacity: 0;
+      }
+      .hamburger.active span:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+      }
+      .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 4;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="Index.html">TechLa.</a>
+    </div>
+    <div class="hamburger" tabindex="0" aria-label="Open navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav>
+      <a href="about.html">ABOUT US</a>
+      <a href="contact.html">CONTACT</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about" class="wrapper">
+      </div>
+      <div class="full-width-row">
+        <h1>About Us</h1>
+      </div>
+
+      <div class="row">
+        <div class="col-4">
+          <div class="card">
+            <div class="front-page" style="background-image: url('image/image1.png')">
+              <div class="card-info">
+                <h2 class="card-title">Marc</h2>
+              </div>
+            </div>
+            <div class="back-page">
+              <div class="card-content">
+                <h3>Marc Vincent Alindayu</h3>
+                <p class="card-description">Marc is a backend enthusiast with creative ideas.</p>
+                <p class="card-description">Email: </p>
+                <p class="card-description">Contact no: </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div class="card">
+            <div class="front-page" style="background-image: url('image/image2.png')">
+              <div class="card-info">
+                <h2 class="card-title">Lance</h2>
+              </div>
+            </div>
+            <div class="back-page">
+              <div class="card-content">
+                <h3>Lance Aaron Auxilio</h3>
+                <p class="card-description">Lance enjoys solving logic puzzles and coding challenges.</p>
+                <p class="card-description">Email: </p>
+                <p class="card-description">Contact no: </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div class="card">
+            <div class="front-page" style="background-image: url('image/malo_pic.png')">
+              <div class="card-info">
+                <h2 class="card-title">Malonie</h2>
+              </div>
+            </div>
+            <div class="back-page">
+              <div class="card-content">
+                <h3>Malonie Bachiller</h3>
+                <p class="card-description">Malonie develops backend software and manages projects.</p>
+                <p class="card-description">Email: mbachiller@gmail.com</p>
+                <p class="card-description">Contact no: 09071583832</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div class="card">
+            <div class="front-page" style="background-image: url('image/image4.png')">
+              <div class="card-info">
+                <h2 class="card-title">Nhatan</h2>
+              </div>
+            </div>
+            <div class="back-page">
+              <div class="card-content">
+                <h3>Nhatan Bolus</h3>
+                <p class="card-description">Nhatan is passionate about design and innovation.</p>
+                <p class="card-description">Email: </p>
+                <p class="card-description">Contact no: </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div class="card">
+            <div class="front-page" style="background-image: url('image/image5.png')">
+              <div class="card-info">
+                <h2 class="card-title">June</h2>
+              </div>
+            </div>
+            <div class="back-page">
+              <div class="card-content">
+                <h3>June Rafael Borneo</h3>
+                <p class="card-description">June is always ready to explore new coding adventures.</p>
+                <p class="card-description">Email: </p>
+                <p class="card-description">Contact no: </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 TEAM TECHLA — BSIS 203</p>
+  </footer>
+
+  <script>
+    // Hamburger menu functionality
+    const hamburger = document.querySelector('.hamburger');
+    const nav = document.querySelector('nav');
+    const overlay = document.querySelector('.overlay');
+    hamburger.addEventListener('click', function() {
+      hamburger.classList.toggle('active');
+      nav.classList.toggle('active');
+      overlay.style.display = nav.classList.contains('active') ? 'block' : 'none';
+      hamburger.setAttribute('aria-expanded', nav.classList.contains('active'));
+    });
+    overlay.addEventListener('click', function() {
+      hamburger.classList.remove('active');
+      nav.classList.remove('active');
+      overlay.style.display = 'none';
+      hamburger.setAttribute('aria-expanded', 'false');
+    });
+  </script>
+</body>
+</html>
